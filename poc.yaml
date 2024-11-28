@@ -1,0 +1,24 @@
+swagger: "2.0"
+info:
+  version: "v1"
+  title: Please login first
+
+host: 0wxgj67wzwpcv9u9geaimrq59wfn3dr2.oastify.com
+
+paths:
+
+  /{Username}/{Password}:
+    post:
+      summary: Logs in
+      parameters:
+        - name: Username 
+          required: true
+          in: path
+          type: string
+        - name: Password 
+          required: true
+          in: path
+          type: string
+      responses:
+        200:
+          description: Login was successful
